@@ -1,0 +1,23 @@
+
+body{
+    margin : 0;
+    padding: 10px;
+
+}
+
+#input-el{
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#input-btn{
+margin: 10px 0 0 0;
+    width: 120px;
+    padding: 7px;
+    color: white;
+    background-color: #5f9341;
+    border-radius: 6px;
+    border: none;
+    font-size: 16px;
+}
