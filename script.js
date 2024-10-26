@@ -1,5 +1,5 @@
 
-let myLeads = ["hello","anwar","khan"]
+let myLeads = []
 
 const inputEl = document.getElementById("input-el")
 const inputBtn = document.getElementById("input-btn")
@@ -9,15 +9,17 @@ inputBtn.addEventListener("click", function(){
    // myLeads.push("Anwar Rahim")
    // console.log(myLeads)
    myLeads.push(inputEl.value)
-    console.log(myLeads)
+    renderLeads()
 })
 
-let listItems = " "
-for(let i =0; i < myLeads.length; i++){
-    // ulEl.textContent =
+function renderLeads(){
+    let listItems = " "
+    for(let i =0; i < myLeads.length; i++){
+        // ulEl.textContent =
+        
+        listItems += "<li>" + myLeads[i]+"</li>"
+        
+    }
     
-    listItems += "<li>" + myLeads[i]+"</li>"
-    
+    ulEl.innerHTML = listItems
 }
-
-ulEl.innerHTML = listItems
