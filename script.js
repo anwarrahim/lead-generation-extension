@@ -1,8 +1,13 @@
 
+let myLeads = []
 
-function saveButton(){
-    console.log("Button Clicked")
-}
+const inputEl = document.getElementById("input-el")
+const inputBtn = document.getElementById("input-btn")
+
+
+
+
+
 
 
 
