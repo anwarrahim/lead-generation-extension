@@ -1,5 +1,5 @@
 
-let myLeads = []
+let myLeads = ["hello","anwar","khan"]
 
 const inputEl = document.getElementById("input-el")
 const inputBtn = document.getElementById("input-btn")
@@ -12,8 +12,12 @@ inputBtn.addEventListener("click", function(){
     console.log(myLeads)
 })
 
-for(let i =0; i < inputEl.length; i++){
+let listItems = " "
+for(let i =0; i < myLeads.length; i++){
     // ulEl.textContent =
-    console.log(myLeads[i])
+    
+    listItems += "<li>" + myLeads[i]+"</li>"
     
 }
+
+ulEl.innerHTML = listItems
